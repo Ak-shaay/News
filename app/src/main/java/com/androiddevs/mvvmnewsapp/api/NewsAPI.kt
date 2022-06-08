@@ -18,7 +18,7 @@ interface NewsAPI {
     ):Response<NewsResponse>
 
     @GET("v2/top-headlines")
-    suspend fun searchforNews(
+    suspend fun searchForNews(
         @Query("q")
         searchQuery:String="us",
         @Query("page")
